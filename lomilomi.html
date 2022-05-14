@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5948e9a22f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lomilomi.css">
+    <title>Ho'Omaha</title>
+</head>
+<body>
+    <section class="navbar">
+        <div class="logo">
+            <a href="index.html"><h1>HO'<span>OMAHA</span></h1></a>
+        </div>
+        <div class="nav">
+            <i class="fa-solid fa-xmark"></i>
+            <ul>
+                           
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="index.html#services"><li>Services</li></a>
+                <a href="index.html#membership"><li>Membership</li></a>
+                <a href="#"><li>Sign In</li></a>
+                <a class="sign-up" href="#"><li>Sign Up</li></a>
+        
+            </ul>     
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </section>
+
+    <section class="product"">
+        <div class="pictures">
+                <img src="technique.jpg" alt="technique">
+                <img src="equipment.jpg" alt="Equipments">
+                <img src="benifit.jpg" alt="benifit">
+                <img src="treatment.jpg" alt="treatment">
+        </div>
+
+        <div class="content">
+            <div class="description">
+                <h1>Lomilomi Massage</h1>
+                <p>At HO’OMAHA Spa, we pride ourselves on our ability to provide quality treatment and uncompromised 
+                    service. We are so certain of your satisfaction that we’ll give your money back if we fail to 
+                    deliver or provide immediate comprehensive response.</p>
+            </div>
+            <div class="join-button">
+                <a href="#">Join Us</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-card main-content">
+            <h3>Ho'Omaha Massage Parlour</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda ad sunt, eius quibusdam blanditiis culpa aspernatur asperiores! Quod sed minima nostrum vero?</p>
+            <p>This site was designed and developed by <span>Orgha Tomal Roy</span></p>
+        </div>
+        <div class="footer-card products">
+            <h5>Products</h5>
+            <ul>
+                <a href="#"><li>Lomilomi Massage</li></a>
+                <a href="#"><li>Pohaku</li></a>
+                <a href="#"><li>Kona Facial</li></a>
+                <a href="#"><li>Sunset Yoga</li></a>
+            </ul>
+        </div>
+        <div class="footer-card useful-links">
+            <h5>Useful links</h5>
+            <ul>
+                <a href="#"><li>FAQ</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>Stores</li></a>
+                <a href="#"><li>Terms of Services</li></a>
+            </ul>
+        </div>
+        <div class="footer-card get-in-touch">
+            <h5>Get in touch</h5>
+            <a href="#">Contact us →</a>
+            <p>Address: Kona, Hawaii</p>
+            <p>Contact Number: +880 1767-47903</p>
+            
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('.fa-bars')
+        const close = document.querySelector('.fa-xmark')
+        const nav = document.querySelector('.nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+    </script>
+
+</body>
+</html>
